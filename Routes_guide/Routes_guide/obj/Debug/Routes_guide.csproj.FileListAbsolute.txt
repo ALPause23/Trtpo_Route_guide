@@ -1,0 +1,15 @@
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\Routes_guide.exe.config
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\Routes_guide.exe
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\Routes_guide.pdb
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.csprojAssemblyReference.cache
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.Routes_guides.resources
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.Properties.Resources.resources
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.csproj.GenerateResource.cache
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.csproj.CoreCompileInputs.cache
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.exe
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.pdb
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\Google.Protobuf.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\MySql.Data.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\MySql.Data.xml
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.Start_Window.resources
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.csproj.CopyComplete
