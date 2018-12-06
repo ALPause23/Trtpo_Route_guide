@@ -35,11 +35,11 @@
             // 
             // nameBox
             // 
-            this.nameBox.Font = new System.Drawing.Font("Segoe Print", 16.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameBox.Font = new System.Drawing.Font("Times New Roman", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameBox.Location = new System.Drawing.Point(155, 142);
             this.nameBox.MaxLength = 30;
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(250, 46);
+            this.nameBox.Size = new System.Drawing.Size(250, 34);
             this.nameBox.TabIndex = 3;
             // 
             // label1

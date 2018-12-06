@@ -19,5 +19,10 @@ namespace Routes_guide
             start = s;
             InitializeComponent();
         }
+
+        private void MainWindow_FormClose(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

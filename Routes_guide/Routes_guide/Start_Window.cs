@@ -35,5 +35,10 @@ namespace Routes_guide
                 label1.Text = "НЕТ СОЕДИНЕНИЯ С MySQL";
             }
         }
+
+        private void Start_Window_FormClose(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
