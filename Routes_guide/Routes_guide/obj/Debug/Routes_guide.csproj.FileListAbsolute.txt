@@ -13,3 +13,4 @@ E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\MySql.Data.dll
 E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\MySql.Data.xml
 E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.Start_Window.resources
 E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.csproj.CopyComplete
+E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.MainWindow.resources

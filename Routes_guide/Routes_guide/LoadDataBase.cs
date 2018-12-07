@@ -18,6 +18,7 @@ namespace Routes_guide
             catch(Exception e)
             {
                 Console.WriteLine("Error: " + e.Message);
+                return false;
             }
             return true;
         }

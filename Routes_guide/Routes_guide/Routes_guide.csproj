@@ -68,6 +68,7 @@
     <Compile Include="Routes_guides.Designer.cs">
       <DependentUpon>Routes_guides.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchRoute.cs" />
     <Compile Include="Start_Window.cs">
       <SubType>Form</SubType>
     </Compile>
