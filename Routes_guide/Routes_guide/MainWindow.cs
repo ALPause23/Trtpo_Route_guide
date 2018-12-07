@@ -15,6 +15,7 @@ namespace Routes_guide
     {
         private Start_Window start;
         //private SearchRoute searRoute;
+        private string name = "";
 
         public MainWindow(Start_Window s)
         {
@@ -123,7 +124,7 @@ namespace Routes_guide
             conn2.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             string A = this.textBox1.Text;
             string B = this.textBox2.Text;
@@ -132,5 +133,11 @@ namespace Routes_guide
             search(A, B, type_trans);
 
         }
+
+        public void setName(string n)
+        {
+            this.name = n;
+        }
+
     }
 }

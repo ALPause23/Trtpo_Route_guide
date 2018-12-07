@@ -29,6 +29,7 @@ namespace Routes_guide
             {
                 this.Visible = false;
                 mainWindow.Visible = true;
+                mainWindow.setName(this.label1.Text);
             }
             else
             {
