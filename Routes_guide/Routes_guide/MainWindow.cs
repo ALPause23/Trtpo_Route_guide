@@ -132,9 +132,7 @@ namespace Routes_guide
             string A = this.textBox1.Text;
             string B = this.textBox2.Text;
             string type_trans = this.typeComboBox.Text;
-
             search(A, B, type_trans);
-
         }
 
         public void setName(string n)
@@ -176,6 +174,16 @@ namespace Routes_guide
             {
                 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string type_trans = this.typeComboBox.Text;
+            if (type_trans == "Тип транспорта")
+            {
+
+            }
+            else showAll(type_trans);
         }
     }
 }
