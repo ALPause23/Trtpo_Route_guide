@@ -155,30 +155,45 @@ namespace Routes_guide
         {
             string conneStr = "server=localhost;user=root;database=transport;password=2211lalka_Kobra;";
             string tab_transports = "routes";
-            List<int> array1 = new List<int>();
+            //List<int> array1 = new List<int>();
             MySqlConnection c1 = new MySqlConnection(conneStr);
 
             c1.Open();
-            string request = "SELECT * FROM " + tab_transports + " WHERE type='" + type + "';";
+            string request;
+            if (type == "Все типы")
+            {
+                request = "SELECT * FROM " + tab_transports + ";";
+            }
+            else
+            {
+                request = "SELECT * FROM " + tab_transports + " WHERE type='" + type + "';";
+            }
+            //string request = "SELECT * FROM " + tab_transports + "';";
 
             MySqlCommand cmd = new MySqlCommand(request, c1);
             MySqlDataReader reader = cmd.ExecuteReader();
 
             DataTable table = new DataTable();
+            table.Columns.Add("№");
             table.Columns.Add("Маршрут");
             table.Columns.Add("Тип");
             table.Columns.Add("Время отправления");
             table.Columns.Add("Время прибытия");
-                        
+            table.Columns.Add("Время в пути");
+
+            
+
             while (reader.Read())
             {
-                
+                table.Rows.Add(reader[0].ToString(), reader[1].ToString(), reader[5].ToString(), reader[3].ToString(), reader[4].ToString(), reader[2].ToString());
             }
+            dataGridView2.DataSource = table;
+            c1.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string type_trans = this.typeComboBox.Text;
+            string type_trans = this.typeComboBox2.Text;
             if (type_trans == "Тип транспорта")
             {
 
