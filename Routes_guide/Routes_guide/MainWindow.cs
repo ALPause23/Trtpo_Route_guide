@@ -98,26 +98,27 @@ namespace Routes_guide
             table.Columns.Add("Тип");
             table.Columns.Add("Время отправления");
             table.Columns.Add("Время прибытия");
+            table.Columns.Add("Время в пути");
             table.Columns.Add("Место отправления");
             table.Columns.Add("Место прибытия");
             string requestResult;
 
             foreach (int req in result)
             {
-                if (type == "Все типы")
+                if (type == "Все типы" || type == "Тип транспорта")
                 {
-                    requestResult = "SELECT route, type, departTime, arrivalTime FROM " + tab_transports + " WHERE id=" + req + ";";
+                    requestResult = "SELECT route, type, departTime, arrivalTime, timeForTravell FROM " + tab_transports + " WHERE id=" + req + ";";
                 }
                 else
                 {
-                    requestResult = "SELECT route, type, departTime, arrivalTime FROM " + tab_transports + " WHERE id=" + req + " AND type='" + type + "';";
+                    requestResult = "SELECT route, type, departTime, arrivalTime, timeForTravell FROM " + tab_transports + " WHERE id=" + req + " AND type='" + type + "';";
                 }
 
                 MySqlCommand command = new MySqlCommand(requestResult, conn3);
                 MySqlDataReader read = command.ExecuteReader();
                 while (read.Read())
                 {
-                    table.Rows.Add(read[0].ToString(), read[1].ToString(), read[2].ToString(), read[3].ToString(), this.textBox1.Text, this.textBox2.Text);
+                    table.Rows.Add(read[0].ToString(), read[1].ToString(), read[2].ToString(), read[3].ToString(), read[4].ToString(), this.textBox1.Text, this.textBox2.Text);
                 }
                 read.Close();
             }
