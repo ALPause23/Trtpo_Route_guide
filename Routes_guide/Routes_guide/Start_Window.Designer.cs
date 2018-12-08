@@ -45,10 +45,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(52, 145);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(61, 144);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 33);
+            this.label1.Size = new System.Drawing.Size(65, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "ИМЯ";
             // 

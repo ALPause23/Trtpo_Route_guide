@@ -14,8 +14,8 @@ namespace Routes_guide
     public partial class MainWindow : Form
     {
         private Start_Window start;
-        //private SearchRoute searRoute;
-        private string name = "";
+        private About about;
+        private string name = "name";
 
         public MainWindow(Start_Window s)
         {
@@ -98,6 +98,8 @@ namespace Routes_guide
             table.Columns.Add("Тип");
             table.Columns.Add("Время отправления");
             table.Columns.Add("Время прибытия");
+            table.Columns.Add("Место отправления");
+            table.Columns.Add("Место прибытия");
             string requestResult;
 
             foreach (int req in result)
@@ -115,7 +117,7 @@ namespace Routes_guide
                 MySqlDataReader read = command.ExecuteReader();
                 while (read.Read())
                 {
-                    table.Rows.Add(read[0].ToString(), read[1].ToString(), read[2].ToString(), read[3].ToString());
+                    table.Rows.Add(read[0].ToString(), read[1].ToString(), read[2].ToString(), read[3].ToString(), this.textBox1.Text, this.textBox2.Text);
                 }
                 read.Close();
             }
@@ -139,5 +141,40 @@ namespace Routes_guide
             this.name = n;
         }
 
+        private void MainWindow_VisibleChanged(object sender, EventArgs e)
+        {
+            this.label4.Text = name;
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            about = new About();
+            about.Visible = true;
+        }
+
+        private void showAll(string type)
+        {
+            string conneStr = "server=localhost;user=root;database=transport;password=2211lalka_Kobra;";
+            string tab_transports = "routes";
+            List<int> array1 = new List<int>();
+            MySqlConnection c1 = new MySqlConnection(conneStr);
+
+            c1.Open();
+            string request = "SELECT * FROM " + tab_transports + " WHERE type='" + type + "';";
+
+            MySqlCommand cmd = new MySqlCommand(request, c1);
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            DataTable table = new DataTable();
+            table.Columns.Add("Маршрут");
+            table.Columns.Add("Тип");
+            table.Columns.Add("Время отправления");
+            table.Columns.Add("Время прибытия");
+                        
+            while (reader.Read())
+            {
+                
+            }
+        }
     }
 }

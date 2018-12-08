@@ -28,8 +28,8 @@ namespace Routes_guide
             if (loadDataBase.connectDataBase())
             {
                 this.Visible = false;
-                mainWindow.Visible = true;
-                mainWindow.setName(this.label1.Text);
+                mainWindow.setName(nameBox.Text);
+                mainWindow.Visible = true;                
             }
             else
             {
