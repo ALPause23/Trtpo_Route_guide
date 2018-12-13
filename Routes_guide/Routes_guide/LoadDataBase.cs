@@ -8,7 +8,6 @@ namespace Routes_guide
 
         public bool connectDataBase()
         {
-            //Console.WriteLine("Getting Connection ...");
             MySqlConnection conn = GetDBConnection();
  
             try

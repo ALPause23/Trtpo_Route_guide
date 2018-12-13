@@ -32,3 +32,13 @@ D:\Univer\Routes_guide\Routes_guide\obj\Debug\Routes_guide.exe
 D:\Univer\Routes_guide\Routes_guide\obj\Debug\Routes_guide.pdb
 D:\Univer\Routes_guide\Routes_guide\obj\Debug\Routes_guide.About.resources
 E:\Univer\trtpo\Routes_guide\Routes_guide\obj\Debug\Routes_guide.About.resources
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.abstractions.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.runner.reporters.net452.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.runner.utility.net452.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.assert.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.core.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.execution.desktop.dll
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.assert.xml
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.core.xml
+E:\Univer\trtpo\Routes_guide\Routes_guide\bin\Debug\xunit.execution.desktop.xml

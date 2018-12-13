@@ -13,6 +13,12 @@ namespace Routes_guide
 {
     public partial class MainWindow : Form
     {
+        struct StopPoints
+        {
+            public int idRoute;
+            public int idPoint;
+        }
+
         private Start_Window start;
         private About about;
         private string name = "name";
@@ -37,9 +43,10 @@ namespace Routes_guide
             string tab_transports = "routes";
             string points = "stopPoints";
             
-            List<int> array1 = new List<int>();
-            List<int> array2 = new List<int>();
+            List<StopPoints> array1 = new List<StopPoints>();
+            List<StopPoints> array2 = new List<StopPoints>();
             List<int> result = new List<int>();
+            
 
             MySqlConnection conn1 = new MySqlConnection(conneStr);
             MySqlConnection conn2 = new MySqlConnection(connectStr);
@@ -51,8 +58,8 @@ namespace Routes_guide
             string request1;
             string request2;
 
-            request1 = "SELECT idPoint FROM " + points + " WHERE namePoint='" + A + "';";
-            request2 = "SELECT idPoint FROM " + points + " WHERE namePoint='" + B + "';";
+            request1 = "SELECT idPoint, id FROM " + points + " WHERE namePoint='" + A + "';";
+            request2 = "SELECT idPoint, id FROM " + points + " WHERE namePoint='" + B + "';";
 
             MySqlCommand cmdBus1 = new MySqlCommand(request1, conn1);
             MySqlCommand cmdBus2 = new MySqlCommand(request2, conn2);
@@ -62,15 +69,21 @@ namespace Routes_guide
 
             while (true)
             {
+                StopPoints sp;
                 if (reader1.Read() == true)
                 {
-                    array1.Add((int)reader1[0]);
+                    sp.idRoute = (int)reader1[0];
+                    sp.idPoint = (int)reader1[1];
+                    array1.Add(sp);
+
                 }
                 else
                 {
                     if (reader2.Read() == true)
                     {
-                        array2.Add((int)reader2[0]);
+                        sp.idRoute = (int)reader2[0];
+                        sp.idPoint = (int)reader2[1];
+                        array2.Add(sp);
                     }
                     else
                     {
@@ -79,13 +92,13 @@ namespace Routes_guide
                 }
             }
 
-            foreach (int x in array1)
+            foreach (StopPoints x in array1)
             {
-                foreach (int y in array2)
+                foreach (StopPoints y in array2)
                 {
-                    if (x == y)
+                    if(x.idRoute == y.idRoute && x.idPoint < y.idPoint)
                     {
-                        result.Add(y);
+                        result.Add(y.idRoute);
                     }
                 }
             }
@@ -155,7 +168,6 @@ namespace Routes_guide
         {
             string conneStr = "server=localhost;user=root;database=transport;password=2211lalka_Kobra;";
             string tab_transports = "routes";
-            //List<int> array1 = new List<int>();
             MySqlConnection c1 = new MySqlConnection(conneStr);
 
             c1.Open();
@@ -168,8 +180,7 @@ namespace Routes_guide
             {
                 request = "SELECT * FROM " + tab_transports + " WHERE type='" + type + "';";
             }
-            //string request = "SELECT * FROM " + tab_transports + "';";
-
+           
             MySqlCommand cmd = new MySqlCommand(request, c1);
             MySqlDataReader reader = cmd.ExecuteReader();
 

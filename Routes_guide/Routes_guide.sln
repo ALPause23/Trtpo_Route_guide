@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28218.60
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routes_guide", "Routes_guide\Routes_guide.csproj", "{CC0FDB54-E86B-435B-A746-7408BEBD1EA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest1", "UnitTest1\UnitTest1.csproj", "{2B540E2D-2D0C-47B4-8625-0BCD8B6529A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{CC0FDB54-E86B-435B-A746-7408BEBD1EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC0FDB54-E86B-435B-A746-7408BEBD1EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC0FDB54-E86B-435B-A746-7408BEBD1EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B540E2D-2D0C-47B4-8625-0BCD8B6529A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B540E2D-2D0C-47B4-8625-0BCD8B6529A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B540E2D-2D0C-47B4-8625-0BCD8B6529A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B540E2D-2D0C-47B4-8625-0BCD8B6529A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A38A1300-4B23-412F-BE1D-0E3D4A8DEE87}
 	EndGlobalSection
 EndGlobal
