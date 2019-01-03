@@ -99,7 +99,7 @@
 ## 2.2 Интерфейс пользователя
 
 Окно входа в приложение.  
-При нажатии на кнопку "Вход" - переход к окну восстановления пароля.  
+При нажатии на кнопку "Вход" - переход к окну поиска маршрутов.  
 ![Окно входа в приложение](https://github.com/ALPause23/Trtpo_Route_guide/blob/master/Documentation/Mockups/Start_Window.png)
 
 Главное окно поиска маршрута.
@@ -112,7 +112,7 @@
 ![Главное окно списка всех маршрутов](https://github.com/ALPause23/Trtpo_Route_guide/blob/master/Documentation/Mockups/Main_Window_spisok.png)
 
 Окно данных об ПО
-При нажатии клавиши "About" появляется даннрое окно. отображающую информациию об это м ПО.
+При нажатии клавиши "About" появляется даннрое окно. отображающую информациию об этом ПО.
 ![Окно данных об ПО](https://github.com/ALPause23/Trtpo_Route_guide/blob/master/Documentation/Mockups/About_Window.png)
 
 ## 2.3 Характеристики пользователей
